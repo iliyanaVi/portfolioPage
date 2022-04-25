@@ -22,9 +22,18 @@ body,
 }
 body,
 a {
-  /* color: #cabad5; */
-  color: #e9e9e4;
+  color: #cabad5;
+  /* color: #def1f6; */
   font-family: "Neuton", serif;
+}
+p {
+  font-size: 1.2rem;
+}
+li {
+  font-size: 1.5rem;
+}
+a:hover {
+  color: cyan;
 }
 .bg {
   background-color: #0e0119;
@@ -35,7 +44,7 @@ a {
 h1 {
   text-align: center;
   padding: 0.5rem;
-  color: #cabad5;
+  /* color: #cabad5; */
   margin-bottom: 2rem;
 }
 /* -------------------------------------NAV---------------------------------------- */
@@ -54,7 +63,7 @@ nav {
 }
 /* ------------------------------------PROJECTS STYLES---------------------------------------- */
 .electro-project,
-.news-project {
+.health-tracker-project {
   display: flex;
   align-items: center;
 }
@@ -69,20 +78,20 @@ a:hover {
   background-size: 5rem;
   background-repeat: no-repeat;
 }
-.news-project {
+.health-tracker-project {
   flex-direction: row-reverse;
 }
-.news-pic {
+.health-tracker-pic {
   height: 130px;
   width: 115px;
-  background-image: url("./images/earth.png");
+  background-image: url("./images/healthy-lifestyle.png");
   background-size: 7rem;
   background-repeat: no-repeat;
 }
 .electro-project details {
   flex-basis: 225px;
 }
-.news-project details {
+.health-tracker-project details {
   flex-basis: 130px;
 }
 details a {
@@ -114,14 +123,14 @@ details a {
 .skills-wrap {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
+  /* align-items: center; */
 }
 .skills summary {
   font-size: 1.5rem;
   margin-bottom: 2rem;
 }
 .skills p {
-  font-size: 1.2rem;
+  font-size: 1.4rem;
 }
 .skills-wrap ul {
   justify-content: space-evenly;
@@ -133,6 +142,10 @@ details a {
 @media (max-width: 800px) {
   .skills-wrap {
     flex-direction: column;
+    padding: 0 1rem;
+  }
+  .skills-pic {
+    padding: 0 1.5rem;
   }
 }
 /* -------------------------------------ABOUT---------------------------------------- */
@@ -144,8 +157,8 @@ details a {
 
 #about p {
   text-align: justify;
-  line-height: 1.8;
-  font-size: 1.5rem;
+  line-height: 1.5;
+  font-size: 1.7rem;
 }
 .my-img {
   max-width: 120px;
@@ -153,15 +166,11 @@ details a {
   margin-right: 1rem;
 }
 /* -------------------------------------FOOTER---------------------------------------- */
-/* footer{
-    width: 100%;
-    height: 0.5rem;
-    background-color: #ffcce7;
-} */
 .social {
   display: flex;
   justify-content: flex-end;
 }
-.social a {
+.social a,
+.social p {
   margin: 0.3rem;
 }
